@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - GodLike SMP</title>
+    <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;">
+        <source src="background.mp4" type="video/mp4">
+        <!-- Add WebM/OGG sources for better compatibility if needed -->    
+    </video>
+    <header>
+        <h1>Login / Signup</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="vote.html">Updates</a></li>
+            <li><a href="discord.html">Discord</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="login-container" id="loginBox">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <span class="switch-link" onclick="showSignup()">Don't have an account? Sign up</span>
+        </div>
+        <div class="login-container" id="signupBox" style="display:none;">
+            <h2>Sign Up</h2>
+            <form>
+                <input type="text" placeholder="Username" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <span class="switch-link" onclick="showLogin()">Already have an account? Login</span>
+        </div>
+        <script>
+            function showSignup() {
+                document.getElementById('loginBox').style.display = 'none';
+                document.getElementById('signupBox').style.display = 'block';
+            }
+            function showLogin() {
+                document.getElementById('signupBox').style.display = 'none';
+                document.getElementById('loginBox').style.display = 'block';
+            }
+        </script>
+    </main>
+    <footer style="background:rgba(255,255,255,0.6); border-top:1px solid #eee; padding:0.1rem 0; font-size:0.8rem; text-align:center; width:100%; font-family:'Minecraftia', 'Segoe UI', Arial, sans-serif;">
+    <span>&copy; 2025 GodLike SMP 🍒 &mdash; <a href="mailto:support@godlikesmp.org" style="color:#ff9800;text-decoration:none;">support@godlikesmp.org</a></span>
+    <span style="margin-left:1.5rem;">
+        <a href="terms.html" style="color:#ff9800;text-decoration:none;">Terms Of Service</a> &bull;
+        <a href="#" style="color:#ff9800;text-decoration:none;">About Us</a>
+    </span>
+</footer>
+</body>
+</html>

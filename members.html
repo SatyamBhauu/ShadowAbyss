@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discord - GodLike SMP</title>
+    <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;">
+        <source src="background.mp4" type="video/mp4">
+        <!-- Add WebM/OGG sources for better compatibility if needed -->    
+    </video>
+    <header>
+        <h1>Join our Discord</h1>
+        <a href="login.html" class="login-btn">Login/Signup</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="vote.html">Updates</a></li>
+            <li><a href="discord.html">Discord</a></li>
+        </ul>
+    </nav>
+    <main>
+<section>
+        <input type="text" id="searchBar" placeholder="Search ⌕" style="width:300px; padding:0.5rem; border-radius:8px; border:1px solid #ccc; margin-bottom:2rem; font-size:1rem;">
+        <div id="membersList" style="display:flex; flex-wrap:wrap; gap:2rem; justify-content:center;"></div>
+    </section>
+    <script>
+        async function fetchMembers() {
+            // Replace '/api/members' with your actual backend endpoint
+            const res = await fetch('/api/members');
+            const members = await res.json();
+            return members;
+        }
+
+        function renderMembers(members, filter = "") {
+            const list = document.getElementById('membersList');
+            list.innerHTML = "";
+            members
+                .filter(m => m.name.toLowerCase().includes(filter.toLowerCase()))
+                .forEach(member => {
+                    const card = document.createElement('div');
+                    card.style = "background:#fff; border-radius:12px; box-shadow:0 2px 8px #0001; padding:1rem; text-align:center; width:180px;";
+                    card.innerHTML = `
+                        <img src="${member.profilePic}" alt="${member.name}" style="width:80px; height:80px; border-radius:12px; margin-bottom:0.5rem;">
+                        <div style="font-family:'Minecraftia',Arial,sans-serif; font-size:1.1rem; color:#222;">${member.name}</div>
+                    `;
+                    list.appendChild(card);
+                });
+        }
+
+        let membersData = [];
+        document.getElementById('searchBar').addEventListener('input', function(e) {
+            renderMembers(membersData, e.target.value);
+        });
+
+        fetchMembers().then(data => {
+            membersData = data;
+            renderMembers(membersData);
+        });
+    </script>
+    </main>
+    <footer style="background:rgba(255,255,255,0.6); border-top:1px solid #eee; padding:0.1rem 0; font-size:0.8rem; text-align:center; width:100%; font-family:'Minecraftia', 'Segoe UI', Arial, sans-serif;">
+    <span>&copy; 2025 GodLike SMP 🍒 &mdash; <a href="mailto:support@godlikesmp.org" style="color:#ff9800;text-decoration:none;">support@godlikesmp.org</a></span>
+    <span style="margin-left:1.5rem;">
+        <a href="terms.html" style="color:#ff9800;text-decoration:none;">Terms Of Service</a> &bull;
+        <a href="#" style="color:#ff9800;text-decoration:none;">About Us</a>
+    </span>
+</footer>
+</body>
+</html>

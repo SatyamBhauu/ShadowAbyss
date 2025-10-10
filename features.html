@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Features - GodLike SMP</title>
+    <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;">
+        <source src="background.mp4" type="video/mp4">
+        <!-- Add WebM/OGG sources for better compatibility if needed -->    
+    </video>
+    <header>
+        <h1>Server Features</h1>
+        <a href="login.html" class="login-btn">Login/Signup</a>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="vote.html">Updates</a></li>
+        <li><a href="discord.html">Discord</a></li>
+    </ul>
+    </nav>
+    <main>
+        <section>
+        <h2 style="font-family:'Segoe UI', Arial, sans-serif; color:#222; display:flex; align-items:center; gap:8px;">
+            <span style="font-size:1.5em; color:#ffa726;">⚡</span> CPU Profiler
+        </h2>
+        <p>
+            CPU profiler is used to diagnose performance issues: "lag", low tick rate, high CPU usage, etc.
+        </p>
+        <p>It is:</p>
+        <ul style="font-size:1.1em; color:#222;">
+            <li><strong>Lightweight</strong> – can be ran in production with minimal impact.</li>
+            <li><strong>Easy to use</strong> – no configuration or setup necessary, just install the plugin/mod.</li>
+            <li><strong>Quick to produce results</strong> – running for just ~30 seconds is enough to produce useful insights into problematic areas for performance.</li>
+            <li><strong>Customisable</strong> – can be tuned to target specific threads, sample at a specific interval, record only "laggy" periods, etc.</li>
+            <li><strong>Highly readable</strong> – simple tree structure lends itself to easy analysis and interpretation. The viewer can also apply deobfuscation mappings.</li>
+        </ul>
+        <p>
+            It works by sampling statistical data about the systems activity, and constructing a call graph based on this data. The call graph is then displayed in an online viewer for further analysis by the user.
+        </p>
+    </section>
+    <section>
+        <h2 style="color:#00796b; font-family:'Segoe UI', Arial, sans-serif; margin-bottom:0;">
+            About -"One Player Sleep"<span style="font-size:1.2em;">🛌</span></p>
+        </h2>
+        <h3 style="font-weight:bold; font-size:1.3em; margin-top:0;">
+            It's the most robust one-player-sleep plugin, and it does <em>exactly</em> what it says on the tin.
+        </h3>
+        <p>If you want an elaboration, feel free to read on. <span style="font-size:1.2em;">😉</span></p>
+        <p>
+            This is a small plugin that makes it so only one player is required to be sleeping, instead of most of the players in the same world, for a world to skip the night, clear the weather, and reset the phantom timers of course.
+        </p>
+        <p>
+            The reason that SleepFixer is so small and robust is that it doesn't get the job done in stupid ways.<br>
+            Here's why: All other 'One Player Sleep' plugins (that I am aware of) <strong>set</strong> the time, which not only doesn't seem natural to your players, but it has a side effect of artificially adjusting the <strong>local difficulty</strong>, and it also messes with the day counter in a way which isn't intended.
+        </p>
+    </section>
+    </main>
+    <footer style="background:rgba(255,255,255,0.6); border-top:1px solid #eee; padding:0.1rem 0; font-size:0.8rem; text-align:center; width:100%; font-family:'Minecraftia', 'Segoe UI', Arial, sans-serif;">
+    <span>&copy; 2025 GodLike SMP 🍒 &mdash; <a href="mailto:support@godlikesmp.org" style="color:#ff9800;text-decoration:none;">support@godlikesmp.org</a></span>
+    <span style="margin-left:1.5rem;">
+        <a href="terms.html" style="color:#ff9800;text-decoration:none;">Terms Of Service</a> &bull;
+        <a href="#" style="color:#ff9800;text-decoration:none;">About Us</a>
+    </span>
+</footer>
+</body>
+</html>
