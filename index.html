@@ -14,14 +14,12 @@
     </video>
     <header>
     <h1>Welcome to ShadowAbssy SMP</h1>
-    <div class="copy-box" onclick="copyText()">Join us at! (It will be given by owner soon!)</div>
-        <script>
-  function copyText() {
-    const text = "Join us at! (It will be given by owner soon!)";
-    navigator.clipboard.writeText(text).then(() => {
-      alert("Copied to clipboard!");
-    });
-  }
+    <p onclick="copyText()">Join us at! (It will be given by owner soon!)</p>
+
+<script>
+function copyText() {
+  navigator.clipboard.writeText("Join us at! (It will be given by owner soon!)");
+}
 </script>
     <a href="login.html" class="login-btn">Login/Signup</a>
 </header>
@@ -47,4 +45,5 @@
 </footer>
 </body>
 </html>
+
 
