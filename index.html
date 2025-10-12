@@ -14,7 +14,15 @@
     </video>
     <header>
     <h1>Welcome to ShadowAbssy SMP</h1>
-    <p>Join us at: <strong>[It will be given by owner soon]</strong></p>
+    <div class="copy-box" onclick="copyText()">Join us at! (It will be given by owner soon!)</div>
+        <script>
+  function copyText() {
+    const text = "Join us at! (It will be given by owner soon!)";
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Copied to clipboard!");
+    });
+  }
+</script>
     <a href="login.html" class="login-btn">Login/Signup</a>
 </header>
     <nav>
@@ -39,3 +47,4 @@
 </footer>
 </body>
 </html>
+
