@@ -58,6 +58,18 @@ main {
     50% { transform: translateY(-30px) scale(1.1); opacity: 0.8; }
 }
 
+header {
+    background: rgba(255,255,255,0.6);
+    text-align: left;
+    padding: 2rem 2rem 2rem 1rem; /* left and right padding */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    font-family: 'Minecraftia', 'Segoe UI', Arial, sans-serif;
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+
 .top-welcome-title {
     background: rgba(255,255,255,0.6);
     text-align: left;
