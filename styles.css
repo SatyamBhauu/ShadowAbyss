@@ -468,3 +468,137 @@ header {
       background: #00ffff;
       color: #000;
     }
+
+/* --- VARIABLES (OPTIONAL BUT RECOMMENDED) --- */
+:root {
+    --primary-color: #6a0dad; /* Deep Purple */
+    --accent-color: #ffcc00;  /* Gold/Yellow */
+    --dark-bg: #7a1d7a;       /* Darker purple for background boxes */
+    --error-color: #cc0000;   /* Red for IP warning */
+    --font-family: 'Arial', sans-serif;
+}
+
+/* --- MAIN CONTAINER STYLES --- */
+.welcome-message {
+    font-family: var(--font-family);
+    color: #333;
+    padding: 20px 25px;
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white box */
+    max-width: 750px;
+    margin: 30px auto; /* Center the block and give it space */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+}
+
+/* --- HEADINGS --- */
+.welcome-message h2, .welcome-message h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+.header-title {
+    color: var(--accent-color);
+    text-align: center;
+    text-shadow: 2px 2px #555;
+    margin-bottom: 5px;
+    font-size: 2.2em;
+}
+
+.header-motto {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1em;
+    border-bottom: 2px solid #aaa;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* --- MOTTO BOX --- */
+.motto-box {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* --- TEXT STYLES --- */
+.italic-text {
+    font-style: italic;
+    color: #555;
+    margin-top: -10px;
+}
+
+.intro-list {
+    list-style-type: none;
+    padding-left: 10px;
+    line-height: 1.6;
+}
+
+/* --- FEATURES --- */
+.feature-item {
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.features-list {
+    list-style-type: '⚡ '; /* Custom lightning bolt symbol */
+    padding-left: 25px;
+    margin-top: 5px;
+}
+
+/* --- CONNECTION & IP --- */
+.connect-section {
+    border: 3px solid var(--accent-color);
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.connect-section h2 {
+    color: var(--accent-color);
+    border-bottom: none;
+    margin: 0 0 10px 0;
+}
+
+.ip-address {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.ip-address span {
+    color: var(--error-color); /* Highlight the "soon!" warning in red */
+    text-shadow: 1px 1px #000;
+}
+
+/* --- CLOSING STATEMENT --- */
+.closing-statement {
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 3px dashed var(--accent-color);
+}
+
+/* --- LINKS --- */
+.discord-link, .updates-link {
+    color: #4CAF50; /* Green for Discord */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.updates-link {
+    color: var(--primary-color);
+}
