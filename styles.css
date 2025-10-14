@@ -82,7 +82,7 @@ header {
     position: relative;
 
     /* The Fix: Add space on the left */
-    margin-left: 100px; /* Adjust this value (e.g., 50px, 150px) until it looks right */
+    margin-left: 300px; /* Adjust this value (e.g., 50px, 150px) until it looks right */
 }
 
 header img {
