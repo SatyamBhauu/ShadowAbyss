@@ -2,95 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support ShadowSMP</title>
-  <style>
-    /* Reset and base styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: url('background.png') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-/* Container box */
-.container {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 2rem;
-  max-width: 500px;
-  width: 90%;
-  box-shadow: 0 0 20px rgba(255, 192, 203, 0.5);
-  text-align: center;
-}
-
-/* Headings and text */
-h1 {
-  font-size: 2rem;
-  color: #ffccff;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #f0e6f6;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-}
-
-li {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  color: #ffe6ff;
-}
-
-/* Button styling */
-button {
-  background: linear-gradient(to right, #ff69b4, #ff00ff);
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 0 10px #ff69b4;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #ff00ff;
-}
-  </style>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <title>Support - ShadowAbssy SMP</title>
+  <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet" />
+  <link rel="stylesheet" href="support.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Support ShadowSMP</h1>
-    <p>Become a VIP member for just ₹30/month and help us keep the server alive!</p>
-    <ul>
-      <li>🎖️ VIP Discord Role</li>
-      <li>🛡️ Early Access to New Gamemodes</li>
-      <li>🎁 Monthly In-Game Rewards</li>
-    </ul>
-    <button onclick="redirectToPayment()">Subscribe Now</button>
-  </div>
+  <video autoplay muted loop id="bgVideo">
+    <source src="background.mp4" type="video/mp4" />
+  </video>
 
-  <script>
-    function redirectToPayment() {
-      window.location.href = "https://your-payment-link.com"; // Replace with Razorpay/Instamojo/Paytm link
-    }
-  </script>
+  <header>
+    <h1>Support ShadowAbssy SMP</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="vote.html">Updates</a></li>
+      <li><a href="discord.html">Discord</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="glow-box">
+      <h2>💎 Become a VIP Member</h2>
+      <p>Support the server for just ₹30/month and unlock exclusive perks:</p>
+      <ul>
+        <li>🎖️ VIP Discord Role</li>
+        <li>🛡️ Early Access to Gamemodes</li>
+        <li>🎁 Monthly In-Game Rewards</li>
+      </ul>
+      <button onclick="redirectToPayment()">Subscribe Now</button>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; 2025 ShadowAbssy SMP 🍒 — <a href="mailto:support@shadowabssy.org">support@shadowabssy.org</a></span>
+    <span>
+      <a href="terms.html">Terms Of Service</a> &bull;
+      <a href="about.html">About Us</a>
+    </span>
+  </footer>
+
+  <script src="support.js"></script>
 </body>
 </html>
