@@ -619,6 +619,8 @@ header {
 }
 
 button {
+  display: block;
+  margin: 1.5rem auto 0 auto; /* top auto bottom auto centers it */
   background: linear-gradient(to right, #ff69b4, #ff00ff);
   color: white;
   border: none;
