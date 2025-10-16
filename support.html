@@ -4,25 +4,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Support ShadowSMP</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #2c003e, #4b0082);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ff00ff;
+      max-width: 500px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffccff;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    li {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    button {
+      background: #ff00ff;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff00ff;
+      transition: transform 0.2s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>Support ShadowSMP</h1>
-    <p>Help us keep the server running and unlock exclusive perks for just ₹30/month!</p>
-
+    <p>Become a VIP member for just ₹30/month and help us keep the server alive!</p>
     <ul>
-      <li>🎖️ VIP Role on Discord</li>
-      <li>🛡️ Early access to new gamemodes</li>
-      <li>🎁 Monthly in-game rewards</li>
+      <li>🎖️ VIP Discord Role</li>
+      <li>🛡️ Early Access to New Gamemodes</li>
+      <li>🎁 Monthly In-Game Rewards</li>
     </ul>
-
-    <button onclick="redirectToPayment()">Subscribe Now – ₹30/month</button>
+    <button onclick="redirectToPayment()">Subscribe Now</button>
   </div>
 
   <script>
     function redirectToPayment() {
-      window.location.href = "https://your-payment-link.com"; // Replace with Razorpay, Instamojo, or Paytm link
+      window.location.href = "https://your-payment-link.com"; // Replace with Razorpay/Instamojo/Paytm link
     }
   </script>
 </body>
