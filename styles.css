@@ -617,3 +617,44 @@ header {
 .updates-link {
     color: var(--primary-color);
 }
+
+.glow-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #ff00ff;
+  text-align: center;
+  max-width: 500px;
+}
+
+.glow-box h2 {
+  color: #ffccff;
+}
+
+.glow-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.glow-box li {
+  margin: 0.5rem 0;
+  color: #ffe6ff;
+}
+
+button {
+  background: linear-gradient(to right, #ff69b4, #ff00ff);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff69b4;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
