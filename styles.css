@@ -656,3 +656,60 @@ button:hover {
   color: #ffeb3b;
   text-shadow: 0 0 5px #ffeb3b, 0 0 10px #9c27b0;
 }
+
+.qr {
+      margin: 20px 0;
+    }
+
+    .qr img {
+      width: 180px;
+      height: 180px;
+      border-radius: 8px;
+    }
+
+    .upi-id {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 4px;
+    }
+
+    .powered {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 12px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      flex: 1;
+      margin: 0 5px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .pay-btn {
+      background: #007bff;
+      color: white;
+    }
+
+    .share-btn {
+      background: #00cc66;
+      color: white;
+    }
+
+    .pay-btn:hover {
+      background: #0056b3;
+    }
+
+    .share-btn:hover {
+      background: #00994d;
+    }
