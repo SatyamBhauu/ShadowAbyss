@@ -1,3 +1,3 @@
 function redirectToPayment() {
-  window.location.href = "https://your-payment-link.com"; // Replace with your actual payment gateway
+  window.location.href = "https://www.upilinks.in/payment-link/upi1206103519"; // Replace with your actual payment gateway
 }
