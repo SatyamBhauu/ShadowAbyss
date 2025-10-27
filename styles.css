@@ -657,26 +657,49 @@ button:hover {
   text-shadow: 0 0 5px #ffeb3b, 0 0 10px #9c27b0;
 }
 
-.qr {
-      margin: 20px 0;
+.container {
+      background: #1a1a1a;
+      border-radius: 16px;
+      padding: 24px;
+      max-width: 360px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      text-align: center;
+      position: relative;
+    }
+
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      background: #00ff88;
+      border-radius: 50%;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .upi-id {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-bottom: 16px;
     }
 
     .qr img {
       width: 180px;
       height: 180px;
       border-radius: 8px;
-    }
-
-    .upi-id {
-      font-size: 0.9rem;
-      color: #ccc;
-      margin-top: 4px;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
     }
 
     .powered {
       font-size: 0.8rem;
       color: #888;
-      margin-top: 12px;
+      margin-top: 16px;
     }
 
     .buttons {
